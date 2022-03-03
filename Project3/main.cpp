@@ -9,6 +9,6 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
         return -1;
 
     Core::Get_Inst()->process();
-
+  
     return 0;
 }
