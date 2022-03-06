@@ -12,7 +12,7 @@ private:
 	UINT		  m_fps;
 public:
 	void Init();
-	void Update();
+	void Update(double* dt,float* ft);
 public:
 	double GetDeltaTime() { return m_deltaTime; }
 	float GetfDeltaTime() { return (float)m_deltaTime; }

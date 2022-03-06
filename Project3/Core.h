@@ -10,6 +10,13 @@ private:
 	HDC		m_memDC;
 	POINT	m_fPoint;
 	HBITMAP	m_hBit;
+private:
+	vector<vector<int>> m_map2x2;
+	void* bitmapMemory;
+	BITMAPINFO  bitmapinfo;
+	void VectorToBit();
+	double m_dT;
+	float m_fT;
 public:
 	HRESULT	init(HINSTANCE);
 	HRESULT SetUpWindow(HINSTANCE);

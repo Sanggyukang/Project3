@@ -21,12 +21,13 @@ void Timer::Init()
 	QueryPerformanceFrequency(&m_frequency);
 }
 
-void Timer::Update()
+void Timer::Update(double* dt, float* ft)
 {
 	QueryPerformanceCounter(&m_curCount);
 	m_deltaTime = (double)(m_curCount.QuadPart - m_preCount.QuadPart) / (double)m_frequency.QuadPart;
 	m_accumulateDT += m_deltaTime;
 	m_callCount++;
+	*dt = m_accumulateDT;
 	if (1. <= m_accumulateDT) {
 		m_fps = m_callCount;
 		m_callCount = 0;
