@@ -158,7 +158,7 @@ HRESULT Core::init(HINSTANCE hInstance)
 
 HRESULT Core::SetUpWindow(HINSTANCE hInstance)
 {
-    const wchar_t GAME_NAME[] = L"Simple Tetris ";
+    const wchar_t GAME_NAME[] = L"Simple SnakeGame ";
 
     WNDCLASS wc = {};
 
